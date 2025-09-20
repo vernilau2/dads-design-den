@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dad's Design Den — Art & Finds</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo">DD</div>
+        <div>
+          <h1>Dad's Design Den</h1>
+          <p class="tag">Tattoo & digital art • Finds • Reviews</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#shop">Shop</a>
+        <a href="#youtube">YouTube</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div class="left">
+        <h2>Make • Share • Monetize</h2>
+        <p>Original tattoo concepts, logo work, and curated finds. Buy prints, digital downloads, or follow my affiliate picks.</p>
+        <div class="actions">
+          <a href="#portfolio" class="btn">See Portfolio</a>
+          <a href="#shop" class="btn ghost">Visit Shop</a>
+        </div>
+      </div>
+      <div class="right">
+        <div class="video-card">
+          <iframe id="youtubeFrame" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="wrap">
+      <h2>Portfolio</h2>
+      <p class="muted">Auto-updated from your Gallery Google Sheet</p>
+      <div id="gallery" class="gallery-grid"></div>
+    </section>
+
+    <section id="shop" class="wrap">
+      <h2>Shop</h2>
+      <p class="muted">Affiliate links, digital downloads, & print-on-demand</p>
+      <ul id="shopList" class="shop-list"></ul>
+    </section>
+
+    <section id="youtube" class="wrap">
+      <h2>Latest Video</h2>
+      <div class="video-card">
+        <iframe id="youtubeFrame2" src="" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="contact" class="wrap contact">
+      <h2>Contact / Commissions</h2>
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input name="name" placeholder="Your name" required />
+        <input name="email" type="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Tell me about the project..." required></textarea>
+        <button class="btn" type="submit">Send</button>
+      </form>
+      <p class="muted">Follow on Instagram • TikTok • Facebook</p>
+      <div class="socials">
+        <a href="https://instagram.com/" target="_blank">Instagram</a>
+        <a href="https://tiktok.com/" target="_blank">TikTok</a>
+        <a href="https://facebook.com/" target="_blank">Facebook</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <small>© <span id="year"></span> Dad's Design Den</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
